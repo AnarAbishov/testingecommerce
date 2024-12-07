@@ -193,7 +193,7 @@ export default function PrimarySearchAppBar() {
                         style={{ marginLeft: "20px", cursor: "pointer" }}
                         onClick={() => navigate('/')}
                     >
-                        Home
+                        Ana Səhife
                     </Typography>
 
                     <Typography
