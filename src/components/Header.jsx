@@ -16,9 +16,9 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import logo from '../images/logo.png'
-import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux";
-import {setbasket} from "../store/HeaderSlice.jsx";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setbasket } from "../store/HeaderSlice.jsx";
 import Drawer from "./Drawer.jsx";
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -163,7 +163,7 @@ export default function PrimarySearchAppBar() {
     );
 
     return (
-        <Box sx={{ flexGrow: 1 }} style={{marginBottom: "40px"}}>
+        <Box sx={{ flexGrow: 1 }} style={{ marginBottom: "40px" }}>
             <AppBar position="static">
                 <Toolbar>
                     <IconButton
@@ -172,7 +172,7 @@ export default function PrimarySearchAppBar() {
                         color="inherit"
                         aria-label="open drawer"
                         sx={{ mr: 2 }}
-                        onClick={()=>dispatch(setbasket())}
+                        onClick={() => dispatch(setbasket())}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -182,7 +182,7 @@ export default function PrimarySearchAppBar() {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        <img style={{width: "50px",height: "50px"}} src={logo}/>
+                        <img style={{ width: "50px", height: "50px" }} src={logo} />
                     </Typography>
 
                     <Typography
@@ -190,10 +190,10 @@ export default function PrimarySearchAppBar() {
                         noWrap
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{marginLeft: "20px",cursor: "pointer"}}
+                        style={{ marginLeft: "20px", cursor: "pointer" }}
                         onClick={() => navigate('/')}
                     >
-                        Ana Səhifə
+                        Home
                     </Typography>
 
                     <Typography
@@ -201,7 +201,7 @@ export default function PrimarySearchAppBar() {
                         noWrap
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{marginLeft: "20px",cursor: "pointer"}}
+                        style={{ marginLeft: "20px", cursor: "pointer" }}
                         onClick={() => navigate('/about')}
                     >
                         Haqqımızda
@@ -212,7 +212,7 @@ export default function PrimarySearchAppBar() {
                         noWrap
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
-                        style={{marginLeft: "20px",cursor: "pointer"}}
+                        style={{ marginLeft: "20px", cursor: "pointer" }}
                         onClick={() => navigate('/contact')}
                     >
                         Əlaqə
@@ -273,7 +273,7 @@ export default function PrimarySearchAppBar() {
             </AppBar>
             {renderMobileMenu}
             {renderMenu}
-            <Drawer/>
+            <Drawer />
         </Box>
     );
 }
