@@ -10,3 +10,4 @@ Currently, two official plugins are available:
 # ecommerce2024
 # ecommerce2024
 # ecommerce2024
+# ecommerce2024
